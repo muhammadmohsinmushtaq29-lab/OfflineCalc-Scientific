@@ -3,7 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Casio Scientific Calculator (Full)</title>
+<title>OfflineCalc-Scientific – Free Online Scientific Calculator, Works Offline</title>
+<meta name="description" content="OfflineCalc-Scientific: free scientific calculator with trigonometry, logarithms, fractions, memory, history, base conversion and statistics. Works in any browser, no internet needed.">
+<meta name="keywords" content="scientific calculator, offline calculator, online calculator, trigonometry, logarithm, base converter, statistics, quadratic solver">
+<meta name="theme-color" content="#1b1d22">
+<meta property="og:type" content="website">
+<meta property="og:title" content="OfflineCalc-Scientific – Free Scientific Calculator">
+<meta property="og:description" content="Free scientific calculator that works offline: trig, logs, fractions, memory, history, base-N and statistics.">
+<meta name="robots" content="index, follow">
 <style>
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
 :root{--bg:#1b1d22;--body1:#2b2e35;--body2:#16181c;--lcd:#b8c4a8;--lcdt:#1b2013;--fn:#3b3f47;--op:#5b606b;--num:#e9e9ea;--numt:#111;--panel:#23262c;--txt:#ddd;--accent:#d4a017}
@@ -50,13 +57,15 @@ input.f,textarea.f{width:100%;padding:7px;border-radius:6px;border:1px solid #55
 .out{margin-top:10px;font:13px/1.6 "Courier New",monospace;white-space:pre-wrap;word-break:break-all}
 .cg{display:grid;grid-template-columns:1fr 1fr;gap:6px}
 .cg button{height:auto;min-height:34px;font-size:11px;background:var(--fn);padding:4px;box-shadow:none}
+.info{width:100%;max-width:800px;background:var(--panel);border-radius:16px;padding:18px 22px;font-size:14px;line-height:1.65}
+.info h1{font-size:20px;margin:0 0 8px}.info h2{font-size:16px;margin:16px 0 6px}.info ul{margin:0;padding-left:20px}
 .mini{height:28px;font-size:12px;background:var(--op);padding:0 12px;margin-top:8px;box-shadow:none}
 </style>
 </head>
 <body data-theme="classic">
 
 <div class="calc" id="calc">
-  <div class="brand"><b>CASIO</b><small>fx-991 FULL &bull; OFFLINE</small>
+  <div class="brand"><b>OfflineCalc</b><small>SCIENTIFIC &bull; OFFLINE</small>
     <span class="top"><button id="themeBtn" title="Change theme">Theme</button></span></div>
   <div class="lcd">
     <div class="ind"><span id="iS">S</span><span id="iH">HYP</span><span id="iD">DEG</span><span id="iM">M</span><span id="iST">STO</span><span id="iF">a/b</span></div>
@@ -100,6 +109,27 @@ input.f,textarea.f{width:100%;padding:7px;border-radius:6px;border:1px solid #55
 
   <div class="tab" id="t5"><div class="cg" id="consts"></div></div>
 </div>
+
+<section class="info">
+  <h1>OfflineCalc-Scientific – Free Scientific Calculator</h1>
+  <p>A free scientific calculator that runs entirely in your browser and keeps working without an internet connection. Nothing is uploaded or tracked.</p>
+  <h2>Features</h2>
+  <ul>
+    <li>Trigonometry (sin, cos, tan, inverses and hyperbolic), log, ln, powers, roots, factorial, nCr, nPr and mod</li>
+    <li>Degree, radian and gradian modes</li>
+    <li>Memory, variables, Ans, cursor editing and fraction/decimal toggle</li>
+    <li>Calculation history, quadratic solver, base converter (DEC, BIN, OCT, HEX), statistics and physical constants</li>
+    <li>Light, dark and blue themes, with full keyboard support</li>
+  </ul>
+  <h2>How to use</h2>
+  <ul>
+    <li>Press <b>SHIFT</b> to use the gold secondary functions (for example sin⁻¹ or 10ˣ).</li>
+    <li>Press <b>MODE</b> to switch between DEG, RAD and GRAD.</li>
+    <li>Press <b>STO</b> then a variable key (A, B, C, X, ...) to save the last answer.</li>
+    <li>Use <b>S⇔D</b> to switch a result between decimal and fraction.</li>
+    <li>Type with your keyboard: <b>Enter</b> calculates, <b>Backspace</b> deletes, <b>Esc</b> clears.</li>
+  </ul>
+</section>
 
 <script>
 "use strict";
